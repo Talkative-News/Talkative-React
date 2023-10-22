@@ -1,0 +1,99 @@
+#navBarContainer {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    display: flex;
+    z-index: 1;
+}
+
+#navBarBg {
+    margin: 0 auto;
+    background-color: white;
+    width: 1300px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leftNavBar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+#leftNavBar img {
+    width: 11px;
+    height: 10px;
+}
+
+#leftNavBar h1 {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#rightNavBar {
+    width: 660px;
+    height: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+#rightNavBar div.menu {
+    margin-top: -4px;
+    display: flex;
+    gap: 25px;
+}
+
+#rightNavBar div.menu a {
+    font-size: 18px;
+    color: #565656;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#rightNavBar div.menu a.active {
+    font-weight: 500;
+}
+
+#rightNavBar div.searchBox {
+    width: 250px;
+    height: 30px;
+    margin-top: -5px;
+    background-color: #ececec;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#rightNavBar div.searchBox span {
+    color: gray;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+#rightNavBar div.searchBox input {
+    height: 28px;
+    background-color: #ececec;
+    border-radius: 10px;
+    border: 0;
+    font-size: 14px;
+    padding: 0px 6px;
+    margin-top: -2px;
+    color: gray;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#rightNavBar div.searchBox input::placeholder {
+    font-size: 16px;
+}

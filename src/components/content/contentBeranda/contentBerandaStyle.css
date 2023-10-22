@@ -1,0 +1,81 @@
+#contentBeranda {
+    width: 1300px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#sectionTitle h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+#sectionTitle div {
+    height: 4px;
+    background-color: #910000;
+    margin-top: 15px;
+}
+
+#dominantContent {
+    width: 900px;
+}
+
+#sideContent {
+    width: 350px;
+}
+
+#dominantContent .contentBerita {
+    height: 140px;
+    border: 3px solid #DCDCDC;
+    border-radius: 10px;
+    margin-top: 25px;
+    display: flex;
+    text-decoration: none;
+}
+
+#dominantContent .wl {
+    height: 115px;
+}
+
+#dominantContent .contentBerita:hover {
+    background-color: #b8b8b82d;
+}
+
+#dominantContent .contentBerita .beritaLeft img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#dominantContent .wl img {
+    height: 115px !important;
+}
+
+#dominantContent .contentBerita .beritaRight {
+    margin: 10px 25px;
+}
+
+#dominantContent .contentBerita .beritaRight h5.labelBerita {
+    color: #910000;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 8px 0px;
+}
+
+#dominantContent .contentBerita .beritaRight h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 8px 0px;
+    color: black;
+}
+
+#dominantContent .contentBerita .beritaRight p {
+    font-size: 15px;
+    margin: 10px;
+    text-align: justify;
+    margin: 8px 0px;
+    color: black;
+}
