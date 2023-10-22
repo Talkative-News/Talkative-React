@@ -2,13 +2,16 @@ import React from 'react';
 import './navBarStyle.css'
 import Dot from '../../images/dotTalkative.png'
 
+
 function NavBar() {
     return (
         <div id='navBarContainer'>
             <div id='navBarBg'>
                 <div id='leftNavBar'>
-                    <img src={ Dot } alt='Dot Talkative Logo' />
-                    <h1>Talkative</h1>
+                    
+                        <img src={ Dot } alt='Dot Talkative Logo' />
+                        <h1>Talkative</h1>
+                    
                 </div>
                 <div id='rightNavBar'>
                     <div className='menu'>
