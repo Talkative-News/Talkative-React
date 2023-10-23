@@ -10,12 +10,15 @@ function AdminHome() {
   return (
     <div>
         <HeaderAdmin/>
-        <div className='admin-manage'>
-            <AdminManagement/>
+        <div className='admin-content'>
+          <div className='admin-manage'>
+              <AdminManagement/>
+          </div>
+          <div className='news-manage'>
+              <NewsManagement/>
+          </div>
         </div>
-        <div className='news-manage'>
-            <NewsManagement/>
-        </div>
+       
         <div className='footer'>
              <Footer/>
         </div> 
