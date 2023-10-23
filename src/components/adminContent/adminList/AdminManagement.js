@@ -7,8 +7,9 @@ function AdminManagement(){
         <div className='adminContainer'>
         <div className='titleAdmin'>
             <span>Data Administrator</span>
+            {/* <div className='hr'></div> */}
         </div>
-        <div className='hr'></div>
+        <div className='hr'></div> 
         <div className='tableAdmin'>
            
             <table>
