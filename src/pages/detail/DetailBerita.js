@@ -4,6 +4,7 @@ import dataBeritaTrending from '../../data/DataBeritaTrending';
 import dataBeritaTerkini from '../../data/DataBeritaTerkini';
 import NavBar from '../../components/navBar/NavBar';
 import HeadlineDetail from './../../components/headline/HeadlineDetail';
+import Footer from '../../components/footer/Footer';
 import './detailBeritaStyle.css';
 
 function DetailBerita() {
@@ -34,6 +35,7 @@ function DetailBerita() {
                 penulis={selectedArticle.penulis}
             />
             <div className='isiBerita' dangerouslySetInnerHTML={isiBeritaHtml} />
+            <Footer />
         </div>
     );
 }

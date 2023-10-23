@@ -1,0 +1,101 @@
+
+body,html{
+    width: 100%;
+    height: 100%;
+    
+}
+.container{
+    margin: 0;
+    /* background-color: black; */
+    /* height:100%; */
+    width: 100%;
+    position: relative;
+    background-image: url('../../images/login-bg.png');
+    background-size:auto;
+    height: 0%;
+    
+
+}
+.login-title{
+    color: white;
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+.login-box{
+    padding: 250px;
+    text-align: center;
+    
+}
+
+
+.login-form{
+    /* background-color: antiquewhite; */
+    margin: auto;
+    width: 50%;
+    padding: 100px;
+    /* margin: 20px;
+    padding: 20px;
+    width:  400px;
+    height: 250px; */
+    text-align: center;
+}
+
+form{
+    padding: 10px;
+}
+
+.usernameInput{
+    text-align: left;
+    line-height: 30px;
+    padding: 5x;
+    text-align: center;
+    
+}
+.passwordInput{
+    text-align: left;
+    line-height: 30px;
+    padding: 5px;
+    text-align: center;
+}
+input[type=text]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius:18px;
+    border-style: none;
+   
+    background-color:#6c757d;
+    opacity: 50%;
+}
+
+input[type=password]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius:18px;
+    border-style: none;
+    
+    background-color: #6c757d;
+    opacity: 50%;
+}
+
+::placeholder{
+    color: white;
+}
+
+button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 18px;
+    cursor: pointer;
+}

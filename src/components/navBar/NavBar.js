@@ -2,6 +2,7 @@ import React from 'react';
 import './navBarStyle.css'
 import Dot from '../../images/dotTalkative.png'
 
+
 function NavBar() {
     return (
         <div id='navBarContainer'>

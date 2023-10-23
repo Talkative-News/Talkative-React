@@ -1,0 +1,21 @@
+.admin-content{
+    padding-bottom: 30px;
+}
+
+
+
+.admin-manage{
+    position: relative;
+    top: 200px;
+}
+
+.news-manage{
+    position: relative;
+    top: 600px;
+}
+
+.footer{
+    top: 900px;
+    bottom:0;
+    position: absolute;
+}
