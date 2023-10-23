@@ -29,7 +29,7 @@ function LoginAdmin(){
                     </form>
                 </div>
             </div>
-           <Footer/>
+           {/* <Footer/> */}
         </div>
         
       )
