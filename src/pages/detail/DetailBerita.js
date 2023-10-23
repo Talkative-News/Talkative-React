@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import dataBeritaTrending from '../../data/DataBeritaTrending';
 import NavBar from '../../components/navBar/NavBar';
 import HeadlineDetail from './../../components/headline/HeadlineDetail';
+import Footer from '../../components/footer/Footer';
 
 function DetailBerita() {
     const { articleId } = useParams();
@@ -23,6 +24,7 @@ function DetailBerita() {
                 penulis = {berita.penulis}
             />
             <p>{berita.isiBerita}</p>
+            <Footer />
         </div>
     );
 }

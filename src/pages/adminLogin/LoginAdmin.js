@@ -1,7 +1,7 @@
 import React from 'react'
 import './LoginAdmin.css'
 import NavBar from '../../components/navBar/NavBar'
-
+import Footer from '../../components/footer/Footer'
 function LoginAdmin(){
     return (
         <div className='container'>
@@ -29,6 +29,7 @@ function LoginAdmin(){
                     </form>
                 </div>
             </div>
+           
         </div>
         
       )

@@ -1,0 +1,98 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    min-height: 100vh;
+} */
+
+.footer{
+    /* backgrund-size: 100%; */
+    width: 100%;
+    height: auto; /* Set height to 'auto' to allow it to grow with content */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer{
+       /* font-family: Montserrat;  */
+       background-image: url('../../images/footer/footer-bg.png');
+       width: 100%;
+       flex-grow: 1;  
+       /* position: absolute;
+       display: flex;
+       /* height: calc(100% - 60px); */
+       /* background-size: 100%; */
+       /* width: 100%; 
+       bottom: 0;  */
+       /* height: 100%;  */
+      
+       /* bottom: 0; */
+}
+
+.leftWing{
+    color: white;
+    line-height: 1.5;
+    padding: 50px 100px;
+    width: 250px;
+   
+}
+
+.instance-img{
+    width: 290px; 
+    height: 73px; 
+    left: 1000px; 
+    top: 90px; 
+    position: absolute;
+    /* display: flex;
+    flex-direction: row; */
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    /* align-items: center; */
+    /* left: 1335px; */
+    /* margin-right: 0; */
+}
+.instance-img img{
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+   
+}
+
+.logo-place img{
+    padding-right: 5px;
+}
+.logo-place span{
+    color: white; 
+    font-size: 24px; 
+    /* font-family: Montserrat;  */
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.below-logo-text{
+    padding: 10px;
+}
+
+
+.bottom{
+    width: 1728px; 
+    height: 68px; 
+    left: 0px; 
+    top: 253px; 
+    position: absolute; 
+    background: white;
+}
+
+.bottomText{
+    width: 1200px;
+    left: 64px;
+    top: 22px;
+    position: relative;
+    text-align: center;
+    color: #544E4E99;
+    opacity: 60%;
+}
