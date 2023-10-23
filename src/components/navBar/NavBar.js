@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './navBarStyle.css'
 import Dot from '../../images/dotTalkative.png'
 
@@ -13,8 +14,8 @@ function NavBar() {
                 </div>
                 <div id='rightNavBar'>
                     <div className='menu'>
-                        <a className='active' href='https://stackoverflow.com/'>Beranda</a>
-                        <a href='https://stackoverflow.com/'>Kategori</a>
+                        <Link to="/beranda" className='active'>Beranda</Link>
+                        <a href='https://stackoverflow.com/' className='category'>Kategori</a>
                         <a href='https://stackoverflow.com/'>Diskusi</a>
                         <a href='https://stackoverflow.com/'>Tentang Kami</a>
                     </div>
@@ -24,6 +25,13 @@ function NavBar() {
                         <input type='text' placeholder='Cari Berita . . .'></input>
                     </div>
                 </div>
+            </div>
+            <div id='popUpCategory'>
+                <a href='https://stackoverflow.com/'>Olah raga</a>
+                <a href='https://stackoverflow.com/'>Entertainment</a>
+                <a href='https://stackoverflow.com/'>Keuangan</a>
+                <a href='https://stackoverflow.com/'>Politik</a>
+                <a href='https://stackoverflow.com/'>Gaya Hidup</a>
             </div>
         </div>
     );
