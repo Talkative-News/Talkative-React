@@ -23,10 +23,6 @@
     padding-bottom: 30px;
 }
 
-#sideContent {
-    width: 350px;
-}
-
 #dominantContent .contentBerita {
     height: 140px;
     border: 3px solid #DCDCDC;
@@ -37,7 +33,7 @@
 }
 
 #dominantContent .wl {
-    height: 115px;
+    height: 110px;
 }
 
 #dominantContent .contentBerita:hover {
@@ -52,7 +48,7 @@
 }
 
 #dominantContent .wl img {
-    height: 115px !important;
+    height: 110px !important;
 }
 
 #dominantContent .contentBerita .beritaRight {
@@ -79,4 +75,38 @@
     text-align: justify;
     margin: 8px 0px;
     color: black;
+}
+
+#sideContent {
+    width: 350px;
+}
+
+#sideContent .wheater {
+    width: 350px;
+    height: 460px;
+    border: 3px solid #DCDCDC;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+#sideContent .wheater img {
+    width: 350px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#sideContent .iklanBaris {
+    width: 350px;
+    height: 200px;
+    border: 3px solid #DCDCDC;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+#sideContent .iklanBaris img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
 }

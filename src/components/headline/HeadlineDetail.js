@@ -7,7 +7,7 @@ function HeadlineDetail(props) {
         <div id='headlineContainer'>
             <div id='headlineTopShadow' />
             <div id='headlineCover'>
-                <img src={ backgroundBerita } alt='Cover Headline'/>
+                <img src={ backgroundBerita } alt='Cover Headline' draggable='false'/>
             </div>
             <div id='headlineBottomShadow' />
             <div id='headlineContent'>

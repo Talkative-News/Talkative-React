@@ -8,10 +8,8 @@ function NavBar() {
         <div id='navBarContainer'>
             <div id='navBarBg'>
                 <div id='leftNavBar'>
-                    
-                        <img src={ Dot } alt='Dot Talkative Logo' />
-                        <h1>Talkative</h1>
-                    
+                    <img src={ Dot } alt='Dot Talkative Logo' draggable='false'/>
+                    <h1>Talkative</h1>
                 </div>
                 <div id='rightNavBar'>
                     <div className='menu'>

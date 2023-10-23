@@ -7,7 +7,7 @@ function Headline() {
         <div id='headlineContainer'>
             <div id='headlineTopShadow' />
             <div id='headlineCover'>
-                <img src={ Cover } alt='Cover Headline'/>
+                <img src={ Cover } alt='Cover Headline' draggable='false'/>
             </div>
             <div id='headlineBottomShadow' />
             <div id='headlineContent'>
