@@ -5,15 +5,39 @@ import AdminManagement from '../../components/adminContent/adminList/AdminManage
 import NewsManagement from '../../components/adminContent/newsList/NewsManagement'
 import Footer from '../../components/footer/Footer';
 import './admin.css'
+import { useNavigate, Navigate } from 'react-router';
 
 function AdminHome() {
+  // const navigate = useNavigate();
+  const userRole = localStorage.getItem('role');
+  const userName = localStorage.getItem('name');
+
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    window.localStorage.clear(); 
+    navigate('/login')
+  }
+
+  if (!userRole || !userName) {
+    // Redirect the user or display an error message if 'role' or 'name' is missing in localStorage
+    // Example: return <Redirect to="/login" />; // Redirect to the login page
+    return <Navigate to="/login" />
+  }
+
   return (
     <div>
+      
         <HeaderAdmin/>
+        <div className='logout-btn'>
+          <button onClick={handleSignOut}> Sign Out </button>
+        </div>
         <div className='admin-content'>
+           {userRole === 'super-admin' && (
           <div className='admin-manage'>
-              <AdminManagement/>
+            <AdminManagement />
           </div>
+        )}
           <div className='news-manage'>
               <NewsManagement/>
           </div>

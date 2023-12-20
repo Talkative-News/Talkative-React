@@ -24,8 +24,9 @@ function LoginAdmin() {
                 const querySnapshot = await getDocs(q);
                 querySnapshot.forEach((doc) => {
                     // Process retrieved documents
-                    console.log(doc.id, ' => ', doc.data());
+                    // console.log(doc.id, ' => ', doc.data());
                     // Perform actions like setting tokens, redirecting to routes, etc.
+                    localStorage.setItem('name', doc.data().name)
                     localStorage.setItem('role', doc.data().role)
                     navigate('/admin');
                 });

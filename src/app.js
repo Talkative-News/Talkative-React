@@ -4,6 +4,8 @@ import Beranda from './pages/beranda/Beranda';
 import DetailBerita from "./pages/detail/DetailBerita";
 import LoginAdmin from "./pages/adminLogin/LoginAdmin";
 import AdminHome from "./pages/adminPage/AdminHome";
+import FormTambahArtikel from "./pages/addArticle/FormTambahArtikel";
+
 export default function App() {
     return (
         <Router>
@@ -13,6 +15,7 @@ export default function App() {
                 <Route path="/berita/:articleId" element={<DetailBerita />} />
                 <Route path="/login" element={<LoginAdmin />} />
                 <Route path="/admin" element={<AdminHome />} />
+                <Route path="/form-tambah-artikel" element={<FormTambahArtikel />} />
             </Routes>
         </Router>
     );
