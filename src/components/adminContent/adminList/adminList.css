@@ -111,3 +111,95 @@ tr{
     left: 10px;
  
 } 
+.pagination{
+    padding: 10px;
+    position: relative;
+    right: 0;
+}
+
+.addAdmin{
+    position: relative;
+    right: 0px;
+}
+
+.container-form-admin{
+    background-color: white;
+    width: 400px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-admin{
+    padding: 10px;
+}
+
+.form-admin input[type=email]{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius:18px;
+    border-style: solid;
+   color: black;
+    background-color:white;
+    opacity: 50%;
+}
+.form-admin input[type=text]{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius:18px;
+    border-style: solid;
+    color: black;
+    background-color:white;
+    opacity: 50%;
+}
+
+::placeholder{
+    color:black;
+}
+
+.addAdminBtn{
+    position: relative;
+    right: 10px;
+}
+
+.container-edit-admin{
+    background-color: white;
+    width: 400px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 999;
+}
+
+.edit-admin{
+    padding: 10px;
+}
+
+.edit-admin input[type=email]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius:18px;
+    border-style: solid;
+   color: black;
+    background-color:white;
+    opacity: 50%;
+}
+.edit-admin input[type=text]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius:18px;
+    border-style: solid;
+    color: black;
+    background-color:white;
+    opacity: 50%;
+}
