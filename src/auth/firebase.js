@@ -21,3 +21,4 @@ const adminTable = collection(firestore, 'admin');
 // const googleProvider = new GoogleAuthProvider(app);
 
 export { auth, firestore, GoogleAuthProvider, adminTable, getDocs}; // Export the initialized instances
+
