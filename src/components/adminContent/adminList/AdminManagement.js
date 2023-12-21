@@ -142,13 +142,17 @@ function AdminManagement() {
     setSelectedRole({ value: "", label: "" }); // Reset selected role
   };
   return (
-    <div className="container">
-      <div className="adminContainer">
+      <div id="adminContainer">
+        <div id='adminSectionTitle'>
+            <h3>Berita Trending</h3>
+            <div />
+        </div>
         <div className="tableAdmin">
           <table>
             <thead>
               <tr>
                 <th>Nama Admin</th>
+                <th></th>
                 <th>Email</th>
                 <th>Role</th>
                 <th>Aksi</th>
@@ -157,14 +161,15 @@ function AdminManagement() {
             <tbody>
               {adminData.map((admin) => (
                 <tr key={admin.id}>
-                  <td>{admin.name}</td>
+                  <td><b>{admin.name}</b></td>
+                  <div className="styleit"/>
                   <td>{admin.email}</td>
                   <td>
                     {admin.role === "admin" ? "Administrator" : "Super Admin"}
                   </td>
                   <td>
-                    <button onClick={() => handleEdit(admin.id)}>Ubah</button>
-                    <button onClick={() => handleDelete(admin.id)}>Hapus</button>
+                    <button className='btnAction' onClick={() => handleEdit(admin.id)}>Ubah</button>
+                    <button className='btnAction' onClick={() => handleDelete(admin.id)}>Hapus</button>
                   </td>
                 </tr>
               ))}
@@ -226,7 +231,6 @@ function AdminManagement() {
           )}
         </div>
       </div>
-    </div>
   );
 }
 

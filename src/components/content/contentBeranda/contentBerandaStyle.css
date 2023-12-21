@@ -66,6 +66,7 @@
     font-size: 18px;
     margin: 8px 0px;
     color: black;
+    
 }
 
 #dominantContent .contentBerita .beritaRight p {
@@ -84,7 +85,7 @@
     width: 350px;
     height: 460px;
     border: 3px solid #DCDCDC;
-    border-radius: 10px;
+    border-radius: 14px;
     margin-top: 25px;
 }
 
@@ -92,7 +93,7 @@
     width: 350px;
     height: 460px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 #sideContent .iklanBaris {
@@ -108,4 +109,48 @@
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+#dominantContent .contentBerita .beritaLeft #skeleton-img,
+#dominantContent .contentBerita .beritaRight #skeleton-h4,
+#dominantContent .contentBerita .beritaRight #skeleton-h5,
+#dominantContent .contentBerita .beritaRight #skeleton-p {
+    margin: 8px 0px;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 80%),
+        lightgray;
+    background-repeat: repeat-y;
+    background-size: 50px 500px;
+    background-position: 0 0;
+    animation: shine 1s infinite;
+}
+
+#dominantContent .contentBerita .beritaLeft #skeleton-img {
+    height: 140px;
+    width: 200px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+#dominantContent .contentBerita .beritaRight #skeleton-h5 {
+    height: 16px;
+    width: 150px;
+}
+
+#dominantContent .contentBerita .beritaRight #skeleton-h4 {
+    height: 18px;
+    width: 400px;
+}
+
+#dominantContent .contentBerita .beritaRight #skeleton-p {
+    height: 15px;
+    width: 640px;
+}
+
+@keyframes shine {
+    to {
+        background-position: 100% 0;
+    }
 }

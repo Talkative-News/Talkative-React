@@ -11,6 +11,7 @@ export default function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Navigate replace to="/beranda" />} />
+                <Route path="/about" element={<Beranda />} />
                 <Route path="/beranda" element={<Beranda />} />
                 <Route path="/berita/:articleId" element={<DetailBerita />} />
                 <Route path="/login" element={<LoginAdmin />} />

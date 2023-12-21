@@ -1,6 +1,6 @@
 import React from 'react'
 import './headerAdmin.css'
-import NavBar from '../../navBar/NavBar'
+import backgroundHeadline from '../../../images/header/header-bg.png'
 
 function HeaderAdmin(){
 
@@ -9,27 +9,21 @@ function HeaderAdmin(){
   const roleText = userRole === 'super-admin' ? 'Super Admin' : 'Administrator';
 
   return (
-    <div className='container'>
-        <NavBar/>
-        <div className='headerImg'>
-
-        </div>
-        <div className='labelAdmin'>
-            <span> {roleText} </span>
-        </div>
-        <div className='greeting'>
-            <span>Halo, {loggedUser}</span>
-        </div>
-        <div className='greeting-text'>
-            <span>Pada halaman ini, Anda dapat melakukan perubahan & penambahan berita,
-pengelolaan situs dan penghapusan konten.</span>
-        </div>
-        {/* <div className='logout-btn'>
-          <button onClick={()=>handleSignOut}> Sign Out </button>
-        </div> */}
-        
-       
-    </div>
+      <div id='headlineContainer'>
+          <div id='headlineTopShadow' />
+          <div id='headlineCover'>
+              <img src={ backgroundHeadline } alt='Cover Headline' draggable='false'/>
+          </div>
+          <div id='headlineBottomShadow' />
+          <div id='headlineContent'>
+              <div id='contentLeft'>
+                  <h2>{roleText}</h2>
+                  <h1 className='titleDetail'>Halo, {loggedUser}</h1>
+                  <p className='dateDetail'>Pada halaman ini, Anda dapat melakukan perubahan & penambahan berita,</p>
+                  <p className='dateDetail'>pengelolaan situs dan penghapusan konten.</p>
+              </div>
+          </div>
+      </div>
   )
 }
 

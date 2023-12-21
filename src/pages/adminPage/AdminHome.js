@@ -6,6 +6,7 @@ import NewsManagement from '../../components/adminContent/newsList/NewsManagemen
 import Footer from '../../components/footer/Footer';
 import './admin.css'
 import { useNavigate, Navigate } from 'react-router';
+import NavBar from '../../components/navBar/NavBar';
 
 function AdminHome() {
   // const navigate = useNavigate();
@@ -26,28 +27,21 @@ function AdminHome() {
   }
 
   return (
-    <div>
-      
-        <HeaderAdmin/>
+    <>
+      <NavBar />
+      <HeaderAdmin/>
         <div className='logout-btn'>
           <button onClick={handleSignOut}> Sign Out </button>
         </div>
         <div className='admin-content'>
-           {userRole === 'super-admin' && (
+            {userRole === 'super-admin' && (
           <div className='admin-manage'>
             <AdminManagement />
           </div>
         )}
-          <div className='news-manage'>
-              <NewsManagement/>
-          </div>
         </div>
-       
-        <div className='footer'>
-             <Footer/>
-        </div> 
-       
-    </div>
+      <Footer/>
+    </>
   )
 }
 
